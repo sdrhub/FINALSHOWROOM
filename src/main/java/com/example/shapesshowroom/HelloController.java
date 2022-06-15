@@ -85,7 +85,7 @@ public class HelloController implements Initializable {
             stage.show();
             System.out.println("x");
         } else if (choice.equals("Ellipse")) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Ellipse.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Arc.fxml"));
             root = loader.load();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
@@ -101,7 +101,7 @@ public class HelloController implements Initializable {
             stage.show();
             System.out.println("x");   //elexgos gia personal use
         } else if (choice.equals("Path")) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Path.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Line.fxml"));
             root = loader.load();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
